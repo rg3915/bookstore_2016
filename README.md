@@ -25,8 +25,7 @@ Depois que criar os modelos faça:
 ```bash
 $ manage makemigrations core
 $ manage migrate
-# agora a senha deve ter 8 dígitos
-$ manage createsuperuser --username='admin' --email=''
+$ manage createsuperuser --username='admin' --email='' # agora a senha deve ter 8 dígitos
 $ manage loaddata fixtures.json
 $ manage runserver
 ```
@@ -71,3 +70,4 @@ class SomeProtectedView(GroupRequiredMixin, TemplateView):
 
 http://django-braces.readthedocs.org/en/latest/access.html#grouprequiredmixin
 
+http://extracts.panmacmillan.com/getextracts
