@@ -1,6 +1,4 @@
-***************************
-Dominando o shell do Django
-***************************
+# Dominando o shell do Django
 
 ```python
 # from project.app.models import class
@@ -50,8 +48,7 @@ p.count()
 
 
 
-Vendo o SQL equivalente de uma consulta do Django
-=================================================
+## Vendo o SQL equivalente de uma consulta do Django
 
 Se no Django fazemos uma consulta do tipo
 
@@ -76,14 +73,18 @@ http://blog.roseman.org.uk/2010/05/10/django-aggregation-and-simple-group/
 
 http://henriquebastos.net/agregacoes-condicionais-com-django-aggregate-if/
 
-Aggregate
-=========
+## Aggregate
 
-Aggregate
----------
+### Aggregate
 
-Annotate
---------
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eligendi, explicabo sunt maxime cum facere excepturi magnam ad, quas dignissimos rerum quidem eum consectetur similique, libero placeat architecto voluptatibus ab!
+
+### Annotate
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eaque, laborum ratione, explicabo odit placeat pariatur laudantium, quae facere tenetur atque id expedita fuga. Consectetur esse deserunt vero mollitia sunt!
+
+
+
 
 ### Anotações
 
