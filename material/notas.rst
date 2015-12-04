@@ -2,6 +2,7 @@
 Dominando o shell do Django
 ***************************
 
+```python
 # from project.app.models import class
 # from bookstore.bookstore.models import Customer, Seller, PF, PJ, Ordered, Sale, Author, Publisher, Book, Store
 from bookstore.core.models import Customer
@@ -45,7 +46,7 @@ from myproject.core.models import Person
 p = Person.objects.search_person('James')
 p
 p.count()
-
+```
 
 
 
@@ -54,16 +55,22 @@ Vendo o SQL equivalente de uma consulta do Django
 
 Se no Django fazemos uma consulta do tipo
 
-	from bookstore.core.models import Book
-	consulta = Book.objects.all()
+```python
+from bookstore.core.models import Book
+consulta = Book.objects.all()
+```
 
 para ver o equivalente em SQl basta digitar
 
-	print(consulta.query)
+```python
+print(consulta.query)
+```
 
 Eis o SQL equivalente:
 
-	SELECT "core_book"."id", "core_book"."name", "core_book"."price" FROM "core_book" ORDER BY "core_book"."name" ASC
+```sql
+SELECT "core_book"."id", "core_book"."name", "core_book"."price" FROM "core_book" ORDER BY "core_book"."name" ASC
+```
 
 http://blog.roseman.org.uk/2010/05/10/django-aggregation-and-simple-group/
 
