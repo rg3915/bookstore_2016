@@ -63,3 +63,5 @@ include/
 lib/
 local/
 core/migrations/
+
+.venv/

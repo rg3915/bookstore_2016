@@ -2,7 +2,7 @@
 
 Modelagem de banco de dados de uma livraria.
 
-> Python 3.4.3 e Django 1.9
+> Python 3.4.3 e Django 1.9.1
 
 ![bookstore](img/bookstore.jpg)
 
