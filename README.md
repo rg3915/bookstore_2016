@@ -30,6 +30,12 @@ $ manage loaddata fixtures.json
 $ manage runserver
 ```
 
+
+## Screenshot
+
+![index](img/index.png)
+
+
 ## Login
 
 ### shell
