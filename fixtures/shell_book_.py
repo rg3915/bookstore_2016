@@ -1,6 +1,6 @@
-import random
+from random import randin
 import csv
-from core.models import Book, Author, Publisher
+from bookstore.core.models import Book, Author, Publisher
 from django.core.exceptions import ObjectDoesNotExist
 from fixtures.gen_random_values import *
 
@@ -53,14 +53,14 @@ for i in range(REPEAT):
     except ObjectDoesNotExist:
         # ''' Se não existir, então cria o livro. '''
         book_obj = Book(
-            isbn=random.randint(1, 9999999999),
+            isbn=randint(1, 9999999999),
             name=name_book,
             rating=gen_decimal(3, 2),
             # author=author,
             publisher=publisher,
             price=gen_decimal(3, 2),
-            stock_min=random.randint(1, 100),
-            stock=random.randint(1, 1000),
+            stock_min=randint(1, 100),
+            stock=randint(1, 1000),
         )
         book_obj.save()
         # ''' Inserindo os autores nos livros '''
@@ -68,3 +68,6 @@ for i in range(REPEAT):
         author = Author.objects.get(name=name_author)
         book.authors.add(author)
         print('%d Books salvo com sucesso.' % REPEAT)
+
+
+# done

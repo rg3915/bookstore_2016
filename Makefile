@@ -36,7 +36,7 @@ shell_sale:
 	./manage.py shell < fixtures/shell_sale.py
 
 shell_book:
-	./manage.py shell < fixtures/shell_book.py
+	./manage.py shell < fixtures/shell_book_.py
 
 shell_store:
 	./manage.py shell < fixtures/shell_store.py
