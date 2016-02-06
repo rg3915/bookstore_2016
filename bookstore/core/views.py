@@ -3,8 +3,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.conf import settings
 from django.views.generic import TemplateView, ListView, DetailView
-# from django.contrib.auth.models import User
-# from .forms import UserForm
+from django.contrib.auth.models import User
+from .forms import UserForm
 
 from braces.views import GroupRequiredMixin
 from .models import Customer, Book, Store
@@ -91,7 +91,7 @@ class SomeProtectedView(GroupRequiredMixin, TemplateView):
     template_name = 'core/logged.html'
     group_required = u'Diretor'
 
-'''
+
 def adduser(request):
     if request.method == 'POST':
         form = UserForm(request.POST)
@@ -101,4 +101,3 @@ def adduser(request):
     else:
         form = UserForm()
     return render(request, 'adduser.html', {'form': form})
-'''
