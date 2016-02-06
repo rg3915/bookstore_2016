@@ -4,7 +4,7 @@ import requests
 from django.core.management.base import BaseCommand, CommandError
 from django.core.exceptions import ValidationError
 from optparse import make_option
-from core.models import Book
+from bookstore.core.models import Book
 
 
 class Command(BaseCommand):
@@ -20,7 +20,7 @@ class Command(BaseCommand):
 
     def print_red(self, name):
         """imprime em vermelho"""
-        print("\033[91m {}\033[00m".format(name))
+        print("\e[91m {}\e[00m".format(name))
 
     def get_html(self):
         """
@@ -56,3 +56,6 @@ class Command(BaseCommand):
         for i in range(2):
             b = self.get_book()
             print(b['Extracts'])
+
+
+# done
