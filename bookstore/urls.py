@@ -4,6 +4,7 @@ from .core import views as v
 
 urlpatterns = [
     url(r'^$', v.home, name='home'),
+    url(r'^teste/$', v.SomeProtectedView.as_view(), name='teste'),
     url(r'^adduser/$', v.adduser, name='adduser'),
     url(r'^customers/$', v.customer_list, name='customer_list'),
     # url(r'^customers/$', v.SomeProtectedView.as_view(), name='customer_list'),
